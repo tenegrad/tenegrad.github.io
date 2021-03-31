@@ -20,7 +20,7 @@ jQuery.rnd = function(m,n) {
 initparticles();
 
 // function([string1, string2],target id,[color1,color2])    
- consoleText(['ТенеГрад', 'Вступай в нашу команду.', 'Становись жителем города'], 'text',['#430064','#8B0000','#e65100']);
+ consoleText(['TенеГрад', 'Вступай в нашу команду.', 'Становись жителем города'], 'text',['#fdff72','#77FFFF','#FF77FF']);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];
@@ -70,3 +70,11 @@ function consoleText(words, id, colors) {
     }
   }, 400)
 }
+
+
+$(".toggle-icon").click(function() {
+  $('#nav-container').toggleClass("pushed");
+});
+
+
+/*** starwars.com's Toggle Icon Animation ***/
